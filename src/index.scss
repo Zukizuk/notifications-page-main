@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+img {
+  width: 100%;
+  height: unset;
+}
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ol,
+ul {
+  list-style: none;
+}
+
+[type="button"]:disabled,
+[type="reset"]:disabled,
+[type="submit"]:disabled,
+button:disabled {
+  cursor: default;
+}
+a,
+[type="button"],
+[type="reset"],
+[type="submit"],
+button,
+label[for] {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+header,
+footer {
+  width: 100%;
+  max-width: 100%;
+}
+main {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  min-height: 100dvh;
+  padding-bottom: 3rem;
+  position: relative;
+  @media (min-width: 64rem) {
+    background-color: hsl(211, 68%, 94%);
+    padding: 2rem 23rem 3rem;
+  }
+}
+.attribution {
+  max-width: 100%;
+  font-size: 0.9rem;
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  padding: 0.1rem 0;
+  z-index: -1;
+  background: hsl(224, 21%, 14%);
+  color: white;
+  padding: 0.6rem 0;
+  @media (min-width: 64rem) {
+    display: none;
+  }
+
+  a {
+    display: inline-block;
+    margin: 0 0.3rem;
+    color: hsl(5, 85%, 63%);
+  }
+}
